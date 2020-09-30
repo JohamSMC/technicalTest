@@ -13,9 +13,12 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from os import name
 from django.contrib import admin
 from django.urls import path
+from apiRest.api import DataApi
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('caso1/<int:inicio>/<int:final>/<int:paso>', DataApi.as_view(), name="api"),
 ]
