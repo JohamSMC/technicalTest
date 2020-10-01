@@ -4,8 +4,11 @@
 
 ## API Rest 
 
-
 API REST desarrollada con [Django](https://www.djangoproject.com/) y [Django REST framework](https://www.django-rest-framework.org/)
+
+## Tests en GitHub Actions 
+
+  [Enlace Tests en GitHub Actions](https://github.com/JohamSMC/technicalTest/actions)
 
 ##  :one: Pasos para ejecutar la Aplipación :page_facing_up:
 
