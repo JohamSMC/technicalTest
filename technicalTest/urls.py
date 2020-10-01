@@ -15,10 +15,9 @@ Including another URLconf
 """
 from os import name
 from django.contrib import admin
-from django.urls import path
-from apiRest.api import DataApi
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('caso1/<int:inicio>/<int:final>/<int:paso>', DataApi.as_view(), name="api"),
+    path('',include('apiRest.urls')),
 ]
