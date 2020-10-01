@@ -30,6 +30,8 @@ class ApiCalculations():
 			return {"Error":"El valor de final es superior al maximo permitido"}
 		if inicio < self.startList[0]:
 			return {"Error":"El valor de inicio es inferior al minimo permitido"}
+		if paso <= 0:
+			return {"Error":"El valor de paso debe ser mayor a 0"}
 
 		outputs = []
 		startIteration = inicio

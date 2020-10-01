@@ -11,7 +11,7 @@ class DataApi(APIView):
 		start = inicio
 		end = final
 		step = paso
-		outputs = ApiCalculations.executeCalculations(self, start,end,step)
+		outputs = ApiCalculations.executeCalculations(self, start, end, step)
 
 		return JsonResponse(outputs, safe=False)
 		#return Response(outpus)
